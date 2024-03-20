@@ -5,6 +5,9 @@ body {
 img.custom-gif{
   width: 480px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .footer .icon-link {
