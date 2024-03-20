@@ -390,11 +390,14 @@
         clear images by the original SAM. 
       </p>
       <div class="has-text-centered">
-        <img style="width: 90%;" src="./robustsam_file/architecture.pdf"
-             alt="RobustSAM architecture."/>
+        <embed src="./robustsam_file/architecture.pdf" width="800px" height="2100px" />
+<!--         <img style="width: 90%;" src="./robustsam_file/architecture.pdf"
+             alt="RobustSAM architecture."/> -->
       </div>
-      <h3 class="title is-4">Hyper-Space Template</h3>
-      <p>
+      <h3 class="title is-4">Overview of the proposed AMFG and AOTG modules</h3>
+      <embed src="./robustsam_file/sytle-suppresion.pdf" width="800px" height="2100px" />
+      
+<!--       <p>
         HyperNeRF leverages main idea of level set methods by using a template NeRF which lives in
         higher dimensions. In addition to the spatial coordinates (X, Y, Z), the NeRF MLP takes
         additional higher dimensional coordinates W<sub>1</sub> and W<sub>2</sub>. We call these
@@ -404,9 +407,9 @@
         Here is an interactive viewer for the hyper-space of capture shown in the teaser. Drag the
         <span style="color: #29e">blue cursor</span> around to change the ambient dimension rendered
         on the right.
-      </p>
+      </p> -->
     </div>
-    <div class="columns is-centered">
+<!--     <div class="columns is-centered">
       <div class="column is-half">
         <div class="hyper-space-wrapper has-text-centered">
           <div class="hyper-space-axis">
@@ -427,7 +430,7 @@
         </div>
         The hyper-space template rendered from a fixed viewpoint.
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -436,23 +439,17 @@
 <section class="section" id="BibTeX">
   <div class="container content is-max-desktop">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021hypernerf,
-  author = {Park, Keunhong and Sinha, Utkarsh and Hedman, Peter and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Martin-Brualla, Ricardo and Seitz, Steven M.},
-  title = {HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields},
-  journal = {ACM Trans. Graph.},
-  issue_date = {December 2021},
-  publisher = {ACM},
-  volume = {40},
-  number = {6},
-  month = {dec},
-  year = {2021},
-  articleno = {238},
+    <pre><code>@inproceedings{chen2024robustsam,
+  author = {Chen, Wei-Ting and Vong, Yu-Jiet and Kuo, Sy-Yen and Ma, Sizhou and Wang, Jian},
+  title = {RobustSAM: Segment Anything Robustly on Degraded Images},
+  journal = {CVPR},
+  issue_date = {2024}
 }</code></pre>
   </div>
 </section>
 
 
-<section class="section" id="acknowledgements">
+<!-- <section class="section" id="acknowledgements">
   <div class="container content is-max-desktop">
     <h2 class="title">Acknowledgements</h2>
     <p>Special thanks to <a href="https://homes.cs.washington.edu/~holynski/">Aleksander Hołyński</a>,
@@ -460,7 +457,7 @@
       help with collecting data. Thanks to <a href="https://zhengqili.github.io/">Zhengqi Li</a> and
       <a href="http://www.oliverwang.info/">Oliver Wang</a> for their help with the NSFF experiments.</p>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
