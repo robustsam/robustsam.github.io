@@ -2,9 +2,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-img.animated-gif{
+.animated-gif{
   width: 240px;
-  height: 480px;
+  height: auto;
 }
 
 .footer .icon-link {
