@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.custom-gif{
+img.custom-gif{
   width: 240px;
   height: auto;
 }
