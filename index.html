@@ -248,16 +248,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Neural Radiance Fields (NeRF) are able to reconstruct scenes with unprecedented
-            fidelity,
-            and various recent works have extended NeRF to handle dynamic scenes. A common approach
-            to reconstruct such non-rigid scenes is through the use of a learned deformation field
-            mapping from coordinates in each input image into a canonical template coordinate space.
-            However, these deformation-based approaches struggle to model changes in topology, as
-            topological changes require a discontinuity in the deformation field, but these
-            deformation fields are necessarily continuous.
+            Segment Anything Model (SAM) has emerged as a transformative approach in image segmentation, 
+            acclaimed for its robust zero-shot segmentation capabilities and flexible prompting system. 
+            Nonetheless, its performance is challenged by images with degraded quality. Addressing this 
+            limitation, we propose the Robust Segment Anything Model (RobustSAM), which enhances SAM's 
+            performance on low-quality images while preserving its promptability and zero-shot generalization. 
+            Our method leverages the pre-trained SAM model with only marginal parameter increments and computational requirements. 
+            The additional parameters of RobustSAM can be optimized within 30 hours on eight GPUs, demonstrating 
+            its feasibility and practicality for typical research laboratories. We also introduce the Robust-Seg dataset, 
+            a collection of 688K image-mask pairs with different degradations designed to train and evaluate our model optimally. 
+            Extensive experiments across various segmentation tasks and datasets confirm RobustSAM's superior performance, 
+            especially under zero-shot conditions, underscoring its potential for extensive real-world application. Additionally, 
+            our method has been shown to effectively improve the performance of SAM-based downstream tasks such as single 
+            image dehazing and deblurring. 
           </p>
-          <p>
+<!--           <p>
             We address this limitation by lifting
             NeRFs into a higher dimensional space, and by representing the 5D radiance field
             corresponding to each individual input image as a slice through this "hyper-space". Our
@@ -268,7 +273,7 @@
             fixed moments. We show that our method, which we dub HyperNeRF, outperforms existing
             methods on both tasks. Compared to Nerfies, <i>HyperNeRF</i> reduces average error rates by
             4.1% for interpolation and 8.6% for novel-view synthesis, as measured by LPIPS.
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
