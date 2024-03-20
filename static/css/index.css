@@ -2,6 +2,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+img.animated-gif{
+  width: 120px;
+  height: auto;
+}
 
 .footer .icon-link {
     font-size: 25px;
