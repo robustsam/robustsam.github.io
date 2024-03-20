@@ -7,9 +7,10 @@ body {
   justify-content: center;
 }
 
-.custom-gif {
+.img-container .custom-gif {
   width: 480px;
   height: auto;
+  margin: 0 10px; /* Add margin between gifs */
 }
 
 .footer .icon-link {
