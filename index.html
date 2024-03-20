@@ -287,7 +287,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
         <div class="publication-video">
-          <iframe width="640" height="480" src="https://www.youtube.com/embed/qzgdE_ghkaI"
+          <iframe width="640" height="480" src="https://www.youtube.com/watch?v=bx0He5eE8fE"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -301,7 +301,7 @@
 <hr/>
 
 <section class="section">
-  <div class="container is-max-desktop">
+<!--   <div class="container is-max-desktop">
     <h2 class="title is-3">Motivation</h2>
     <div class="columns is-centered">
       <!-- Level Sets. -->
@@ -377,21 +377,21 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 
 
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
-      <h2 class="title is-3">HyperNeRF</h2>
+      <h2 class="title is-3">RobustSAM</h2>
       <p>
-        The HyperNeRF architecture is a straightforward extension to Nerfies. The key difference is
-        that the template NeRF is conditioned on additional higher-dimensional coordinates, where
-        the higher dimensional coordinates are given by an "ambient slicing surface" which can be
-        thought of as a higher dimensional analog to the deformation field.
+        Figure below gives an overview of the proposed RobustSAM. The key contribution of RobustSAM 
+        is the Anti-Degradation Output Token Generation (AOTG) and Anti-Degradation Mask Feature Generation 
+        (AMFG) modules, which extract degradation-invariant information that is aligned those extracted from 
+        clear images by the original SAM. 
       </p>
       <div class="has-text-centered">
-        <img style="width: 90%;" src="./static/figures/architecture.svg"
-             alt="HyperNeRF architecture."/>
+        <img style="width: 90%;" src="./robustsam_file/architecture.pdf"
+             alt="RobustSAM architecture."/>
       </div>
       <h3 class="title is-4">Hyper-Space Template</h3>
       <p>
