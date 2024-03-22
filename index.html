@@ -15,6 +15,29 @@
   <title>RobustSAM: Segment Anything Robustly on Degraded Images
     </title>
 
+
+    <style>
+        .img-container {
+            text-align: center; /* Center the text and images */
+            margin-bottom: 20px; /* Adds some space between the image groups */
+        }
+
+        .image-with-caption {
+            display: inline-block; /* Allows multiple elements side by side */
+            margin: 10px; /* Adds some space around each image and caption */
+        }
+
+        .custom-gif {
+            width: 200px; /* Adjust based on your preference */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 10px; /* Space between caption and image */
+        }
+
+        .caption {
+            font-weight: bold; /* Optional: makes the caption text bold */
+        }
+    </style>
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
   <script>
@@ -227,14 +250,26 @@
         <img src="./robustsam_file/gif_output/haze_back_n_forth.gif"/>
         <img src="./robustsam_file/gif_output/lowlight_back_n_forth.gif"/>
         <img src="./robustsam_file/gif_output/rain_back_n_forth.gif"/> -->
-        <div class="img-container">
-          <img class="custom-gif" src="./robustsam_file/gif_output/blur_back_n_forth.gif">
-          <img class="custom-gif" src="./robustsam_file/gif_output/haze_back_n_forth.gif">
-        </div>
-        <div class="img-container">
-          <img class="custom-gif" src="./robustsam_file/gif_output/lowlight_back_n_forth.gif">
-          <img class="custom-gif" src="./robustsam_file/gif_output/rain_back_n_forth.gif">
-        </div>
+<div class="img-container">
+    <div class="image-with-caption">
+        <div class="caption">Blur</div>
+        <img class="custom-gif" src="./robustsam_file/gif_output/blur_back_n_forth.gif">
+    </div>
+    <div class="image-with-caption">
+        <div class="caption">Haze</div>
+        <img class="custom-gif" src="./robustsam_file/gif_output/haze_back_n_forth.gif">
+    </div>
+</div>
+<div class="img-container">
+    <div class="image-with-caption">
+        <div class="caption">Lowlight</div>
+        <img class="custom-gif" src="./robustsam_file/gif_output/lowlight_back_n_forth.gif">
+    </div>
+    <div class="image-with-caption">
+        <div class="caption">Rain</div>
+        <img class="custom-gif" src="./robustsam_file/gif_output/rain_back_n_forth.gif">
+    </div>
+</div>
 
 <!--       </div> -->
 
