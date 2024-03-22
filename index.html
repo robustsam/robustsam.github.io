@@ -407,7 +407,9 @@
         <img style="width: 100%;" src="./robustsam_file/architecture.jpg"
              alt="RobustSAM architecture."/>
 
-      </p>
+
+        <div class="content has-text-justified">
+          <p>
 RobustSAM augments the original SAM by incorporating five essential components
 (in purple). During training, clear images are fed through the original SAM modules (in gray) to produce features for clear scenes.
 Subsequently, degraded images, generated through augmentation of clear inputs, are processed by RobustSAM, yielding features for
@@ -415,6 +417,11 @@ degraded scenarios. These are then refined via Anti-degradation modules, ensurin
 methodology, supported by a segmentation loss, achieves precise segmentation outcomes in both clear and degraded image conditions.
 During inference, only RobustSAM is used to predict a segmentation mask from an input image. Note: The prompt encoder is excluded for
 conciseness, and the padlock icons represent fixed components loaded from the original SAM model that are not updated during training.
+        </div>
+
+
+        
+
 
         
       </div>
@@ -422,8 +429,13 @@ conciseness, and the padlock icons represent fixed components loaded from the or
 <!--       <embed src="./robustsam_file/style-suppresion.pdf" width="800px" height="2100px" /> -->
         <img style="width: 100%;" src="./robustsam_file/module.jpg"
              alt="AMFG and AOTG modules."/>
-      </p>
-The Anti-Degradation Mask Feature Generation and Output Token Generation modules significantly enhance image quality and segmentation by normalizing degradation effects while preserving essential content. Utilizing Instance and Batch Normalization, the model stabilizes content under various conditions. A Fourier Degradation Suppression module further isolates degradation, focusing on maintaining structural integrity. These modules ensure the generation of robust, degradation-invariant features for precise image assessment and segmentation.
+        <div class="content has-text-justified">
+          <p>
+      The Anti-Degradation Mask Feature Generation and Output Token Generation modules significantly enhance image quality and segmentation by normalizing degradation effects while preserving essential content. Utilizing Instance and Batch Normalization, the model stabilizes content under various conditions. A Fourier Degradation Suppression module further isolates degradation, focusing on maintaining structural integrity. These modules ensure the generation of robust, degradation-invariant features for precise image assessment and segmentation.
+
+        </div>
+      
+      
 
 
       
