@@ -175,81 +175,6 @@
   </div>
 </section>
 
-
-<!-- <section class="hero is-dark is-small">
-  <div class="hero-body">
-    <div class="hero is-dark is-small"">
-      <div id="results-carousel" class="carousel results-carousel"> -->
-
-<!--         <div>
-          <div class="results-item">
-            <video poster="" id="espresso-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/espresso_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="espresso-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/espresso_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div> -->
-
-<!--         <div>
-          <div class="results-item">
-            <video poster="" id="split-cookie-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/split-cookie_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="split-cookie-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/split-cookie_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div> -->
-
-<!--         <div>
-          <div class="results-item">
-            <video poster="" id="3dprinter-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/3dprinter_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="3dprinter-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/3dprinter_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <video poster="" id="ricardo-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ricardo_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="ricardo-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/ricardo_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <video poster="" id="americano-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/americano_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="americano-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/americano_depth.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div> -->
-<!--         <img src="./static/figures/level_set/0.svg"/> -->
-<!--         <img src="./robustsam_file/gif_output/blur.gif"/>
-        <img src="./robustsam_file/gif_output/haze_back_n_forth.gif"/>
-        <img src="./robustsam_file/gif_output/lowlight_back_n_forth.gif"/>
-        <img src="./robustsam_file/gif_output/rain_back_n_forth.gif"/> -->
 <div class="img-container">
     <div class="image-with-caption">
         <div class="caption">Blur</div>
@@ -270,12 +195,57 @@
   
 </div>
 
-<iframe width="560" height="315" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Responsive YouTube Video Embed</title>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0; /* Optional: Adjust the top and bottom margins as needed */
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 560px; /* Optional: Set a max-width if you want */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Centered YouTube Video</h1>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Awukqkbs6zM?si=vQEW91tN4j_iRJNs" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <iframe width="560" height="315" 
   src="https://www.youtube.com/embed/Awukqkbs6zM?si=vQEW91tN4j_iRJNs" 
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen>
-</iframe>
+</iframe> -->
 <!--       </div> -->
 
       <div class="columns is-centered has-text-centered">
